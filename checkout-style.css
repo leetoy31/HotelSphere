@@ -1,0 +1,348 @@
+/* Checkout Hero */
+.checkout__hero {
+  padding: 8rem 2rem 4rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  text-align: center;
+  color: var(--white);
+}
+
+.checkout__hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, var(--primary-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+/* Checkout Section */
+.checkout__section {
+  padding: 4rem 0;
+  min-height: 100vh;
+}
+
+.checkout__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+/* Checkout Form */
+.checkout__form {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.checkout__form h2 {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--extra-light);
+}
+
+.form__group {
+  margin-bottom: 1.5rem;
+}
+
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form__group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form__group label i {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.form__group input,
+.form__group select,
+.form__group textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--extra-light);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  transition: all 0.3s ease;
+  background: var(--white);
+}
+
+.form__group input:focus,
+.form__group select:focus,
+.form__group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(196, 156, 116, 0.1);
+}
+
+.form__group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form__terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: var(--extra-light);
+  border-radius: 0.5rem;
+}
+
+.form__terms input[type="checkbox"] {
+  width: auto;
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+
+.form__terms label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.form__terms a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form__terms a:hover {
+  text-decoration: underline;
+}
+
+.btn__submit {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: var(--gradient-gold);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 5px 15px rgba(196, 156, 116, 0.3);
+}
+
+.btn__submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(196, 156, 116, 0.4);
+}
+
+/* Checkout Summary */
+.checkout__summary {
+  position: sticky;
+  top: 6rem;
+  height: fit-content;
+}
+
+.checkout__summary h2 {
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.summary__card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 1.5rem;
+}
+
+.summary__hotel {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--extra-light);
+  margin-bottom: 1.5rem;
+}
+
+.summary__hotel img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.summary__hotel-info h3 {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.summary__hotel-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.summary__rating {
+  display: inline-block;
+  background: rgba(255, 215, 0, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  color: goldenrod;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.summary__details {
+  margin-bottom: 1.5rem;
+}
+
+.summary__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.summary__row span:first-child {
+  color: var(--text-light);
+}
+
+.summary__price {
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
+
+.summary__divider {
+  height: 1px;
+  background: var(--extra-light);
+  margin: 1.5rem 0;
+}
+
+.summary__total {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--extra-light);
+}
+
+.summary__total .summary__price {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+}
+
+.summary__features {
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--extra-light);
+}
+
+.summary__features h4 {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.summary__features ul {
+  list-style: none;
+}
+
+.summary__features li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.summary__features i {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.security__badge {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid rgba(196, 156, 116, 0.2);
+}
+
+.security__badge i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.security__badge strong {
+  display: block;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.security__badge p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .checkout__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout__summary {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout__hero h1 {
+    font-size: 2rem;
+  }
+
+  .checkout__form {
+    padding: 1.5rem;
+  }
+
+  .form__row {
+    grid-template-columns: 1fr;
+  }
+
+  .summary__card {
+    padding: 1.5rem;
+  }
+
+  .summary__hotel {
+    flex-direction: column;
+  }
+
+  .summary__hotel img {
+    width: 100%;
+    height: 200px;
+  }
+}
